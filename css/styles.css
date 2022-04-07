@@ -137,15 +137,15 @@ ul {
 }
 
 header{
-	background-image: url('../img/cover.png');
+	background-image: url('../img/cover.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 120vh;
+	height: 125vh;
 }
 .header_form{
 	background: rgba(255,255,255,0.85);
-	height: 120vh;
+	height: 125vh;
 }
 .header_form h1{
 	text-transform: uppercase;
