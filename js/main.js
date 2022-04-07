@@ -1,6 +1,13 @@
-$('#header_carousel').owlCarousel({
-    loop: true,
+var $owl = $('.owl-carousel');
+
+$owl.children().each(function (index) {
+    $(this).attr('data-position', index); // NB: .attr() instead of .data()
+});
+
+$owl.owlCarousel({
     center: true,
+    loop: true,
+    items: 3,
     autoplay: true,
     autoPlaySpeed: 1000,
     autoplayHoverPause: true,
@@ -15,4 +22,8 @@ $('#header_carousel').owlCarousel({
             items: 3
         }
     }
+});
+
+$(document).on('click', '.owl-item>div', function () {
+    $owl.trigger('to.owl.carousel', $(this).data('position'));
 });

@@ -141,11 +141,11 @@ header{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 125vh;
+	height: 150vh;
 }
 .header_form{
 	background: rgba(255,255,255,0.85);
-	height: 125vh;
+	height: 130vh;
 }
 .header_form h1{
 	text-transform: uppercase;
