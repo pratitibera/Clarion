@@ -151,11 +151,11 @@ header{
 	text-transform: uppercase;
     font-size: 14px;
     line-height: 23px;
-    color: #F00;
+    color: #8a1517;
     font-weight: bold;
 }
 .header_form hr{
-	border: 1px dotted #f00;
+	border: 1px dotted #8a1517;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10px
@@ -178,7 +178,7 @@ header{
 .header_form button{
 	color: #ffffff;
     text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
-    background: linear-gradient(to bottom, #ff3f42 0%,#cc0000 100%);
+    background: linear-gradient(to bottom, #8a1517 0%, #ab1a1c 100%);
     width: 100%;
 }
 .form_points div{
@@ -238,11 +238,11 @@ header{
 	letter-spacing: .15em;
 }
 .benefits_heading span{
-	color: #5a9ca6;
+	color: #ab1a1c;
 }
 
 .benefits_container{
-	border-left: 4px solid #5a9ca6;
+	border-left: 4px solid #ab1a1c;
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -252,6 +252,10 @@ header{
 	margin-top: 10px;
 }
 .text-maroon{
-	color: #7d1333;
+	color: #ab1a1c;
 	font-weight: 800;
+}
+
+footer{
+	background-color: #ab1a1c;
 }
