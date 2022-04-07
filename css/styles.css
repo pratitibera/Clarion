@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 /* Global classes */
 
 .btn:focus,
@@ -202,4 +204,54 @@ header{
 .whatsapp_icon img {
     height: 70px;
     width: 70px;
+}
+.owl-nav {
+    position: absolute;
+    top: 45%;
+    display: block!important;
+    width: 100%;
+}
+.owl-nav .owl-prev {
+    left: -2.5%;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 6px 4px 16px rgb(0 0 0 / 25%);
+}
+.owl-nav .owl-next {
+    right: -2.5%;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 6px 4px 16px rgb(0 0 0 / 25%);
+}
+.owl-nav .owl-prev .owl-nav-prev, .owl-nav .owl-next .owl-nav-next {
+    color: #000;
+    background: transparent;
+    font-size: 2rem;
+}
+.benefits_heading{
+	letter-spacing: .15em;
+}
+.benefits_heading span{
+	color: #5a9ca6;
+}
+
+.benefits_container{
+	border-left: 4px solid #5a9ca6;
+	font-size: 14px;
+	font-weight: 600;
+}
+.benefits_container .col-md-2{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.text-maroon{
+	color: #7d1333;
+	font-weight: 800;
 }

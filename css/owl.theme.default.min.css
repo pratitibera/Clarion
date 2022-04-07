@@ -13,7 +13,7 @@ width: auto;
 
 .owl-nav .owl-prev .owl-nav-prev,
 .owl-nav .owl-next .owl-nav-next{
-    color: #C4C4C4;
+    color: #000;
     background: transparent;
     font-size: 20px;
 }
