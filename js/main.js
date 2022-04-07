@@ -27,3 +27,42 @@ $owl.owlCarousel({
 $(document).on('click', '.owl-item>div', function () {
     $owl.trigger('to.owl.carousel', $(this).data('position'));
 });
+
+function hasNumbers(t) {
+   var regex = /\d/g;
+   return regex.test(t);
+}
+
+function validEmail(mail) {
+   var pattern = /@gmail\.com/i;
+   if (pattern.test(mail)) {
+      return true
+   } else {
+      return false;
+   }
+}
+
+
+function submitForm() {
+    var user_name = document.getElementById('user_name').value;
+    var user_email = document.getElementById('user_email').value;
+    var user_mobile = document.getElementById('user_mobile').value;
+    var user_date = document.getElementById('user_date').value;
+    if(user_name == '' || user_email == '' || user_mobile == '' || user_date == ''){
+        alert("Please enter all fields");
+    }
+    else{
+        if(hasNumbers(user_name) == false){
+            if(validEmail(user_email) == true){
+                // all validations passed and form gets submitted
+                document.location.href = "form_submitted.html";
+            }
+            else{
+                alert("Please enter a valid email id");
+            }
+        }
+        else{
+            alert("Name cannot contain numbers");
+        }
+    }
+}
