@@ -144,7 +144,9 @@ ul {
 .cursorPointer {
 	cursor: pointer;
 }
-
+.vh-85{
+	height: 85vh;
+}
 header{
 	background-image: url('../img/cover.jpg');
 	background-size: cover;

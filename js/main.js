@@ -1,3 +1,5 @@
+// To set date in date field
+
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; 
@@ -15,8 +17,9 @@ if(mm<10)
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById('user_date').value = today;
 
-var $owl = $('.owl-carousel');
+// For gallery image slider
 
+var $owl = $('.owl-carousel');
 $owl.children().each(function (index) {
     $(this).attr('data-position', index); // NB: .attr() instead of .data()
 });
@@ -25,7 +28,7 @@ $owl.owlCarousel({
     center: true,
     loop: true,
     items: 3,
-    autoplay: true,
+    // autoplay: true,
     autoPlaySpeed: 1000,
     autoplayHoverPause: true,
     dots: false,
@@ -83,3 +86,12 @@ function submitForm() {
         }
     }
 }
+
+$("#header_carousel .owl-item").click(function(){
+    if($(this).hasClass("center") == true){
+        $(this).children().css('transform', 'scale(1.7)');
+    }
+    else{
+        $("#header_carousel .owl-item").children().removeAttr('style');
+    }
+});
