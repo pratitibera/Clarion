@@ -2,15 +2,13 @@
 <html>
 <body>
 
-<h1>Show a Date Control</h1>
+Birthday: <input type="date" id="myDate">
 
-<form action="/action_page.php">
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday">
-  <input type="submit">
-</form>
+<p>Click the button to set a date for the date field.</p>
 
-<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
+<script>
+document.getElementById("myDate").value = "mm/dd/yyyy";
+</script>
 
 </body>
 </html>
