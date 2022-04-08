@@ -95,3 +95,7 @@ $("#header_carousel .owl-item").click(function(){
         $("#header_carousel .owl-item").children().removeAttr('style');
     }
 });
+
+$(".owl-nav > button").click(function(){
+    $("#header_carousel .owl-item").children().removeAttr('style');
+});
