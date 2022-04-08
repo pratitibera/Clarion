@@ -10,7 +10,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
+input[type="date"].mobile:before{
+  content: 'mm/dd/yyyy';
+}
 .btn:focus,
 .btn:active {
 	outline: none !important;
