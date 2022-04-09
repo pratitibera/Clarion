@@ -30,11 +30,14 @@
                      <p>Just fill up the Form<br>Get a Unique Code via email to avail this Offer.</p>
                   </div>
                   <div class="pl-md-2 pr-md-2">
-                     <input type="text" name="name" placeholder="Name" class="w-100" id="user_name">
-                     <input type="text" name="email" placeholder="Email" class="w-100 mt-3" id="user_email">
-                     <input type="number" name="mobile" placeholder="Mobile" class="w-100 mt-3" oninput="this.value = this.value.slice(0,10);" id="user_mobile">
-                     <input type="date" name="date" class="w-100 mt-3" id="user_date">
-                     <button class="btn mt-3" onclick="submitForm();">Submit</button>
+                     <form action="form_submit.php" method="post">
+                        <input type="text" name="name" placeholder="Name" class="w-100" id="user_name" required>
+                        <input type="email" name="email" placeholder="Email" class="w-100 mt-3" id="user_email" required>
+                        <input type="number" name="mobile" placeholder="Mobile" class="w-100 mt-3" oninput="this.value = this.value.slice(0,10);" id="user_mobile" required>
+                        <input type="date" name="date" class="w-100 mt-3" id="user_date" required>
+                        <button class="btn mt-3" type="submit" name="submit">Submit</button>
+                     </form>
+                     
                   </div>
                   <div class="text-center mt-4 form_points">
                      <div>
@@ -172,8 +175,8 @@
 
 
       <section class="pl-md-5 pr-md-5">
-         <div class="w-100 vh-85 pl-md-5 pr-md-5">
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD_Auyy5mUjoRMvTMl6St-hc&key=" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3886.8775451193574!2d80.2689597!3d13.0434657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52662ecb2ef00f%3A0x17faada497ccf432!2sClarion%20Hotel%20President!5e0!3m2!1sen!2sin!4v1649406332143!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
       </section>
 
@@ -189,4 +192,22 @@
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
    </body>
+   <style>
+      .map-responsive{
+
+         overflow:hidden;
+         padding-bottom:100%;
+         position:relative;
+         height:0;
+      }
+
+      .map-responsive iframe{
+
+         left:0;
+         top:0;
+         height:100%;
+         width:100%;
+         position:absolute;
+      }
+   </style>
 </html>
