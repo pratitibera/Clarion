@@ -22,7 +22,7 @@
          <div class="container">
             <div class="row m-0">
                <div class="col-md-8"></div>
-               <div class="col-md-4 header_form">
+               <div class="col-md-4 header_form pb-4 mb-5">
                   <div class="text-center pt-4 pt-md-4 pl-md-3 pr-md-3">
                      <img src="img/logo.png" class="w-40 mb-3">
                      <h1>Weddings to love, to cherish and where forever happiness begins. Book and join with our premium choices and make your special moment even more memorable and joyful!</h1>
@@ -31,10 +31,14 @@
                   </div>
                   <div class="pl-md-2 pr-md-2">
                      <form action="form_submit.php" method="post">
-                        <input type="text" name="name" placeholder="Name" class="w-100" id="user_name" required>
-                        <input type="email" name="email" placeholder="Email" class="w-100 mt-3" id="user_email" required>
-                        <input type="number" name="mobile" placeholder="Mobile" class="w-100 mt-3" oninput="this.value = this.value.slice(0,10);" id="user_mobile" required>
-                        <input type="date" name="date" class="w-100 mt-3" id="user_date" required>
+                        <div>Name</div>
+                        <input type="text" name="name" class="w-100" id="user_name" required>
+                        <div>Email</div>
+                        <input type="email" name="email" class="w-100" id="user_email" required>
+                        <div>Mobile Number</div>
+                        <input type="number" name="mobile" class="w-100" oninput="this.value = this.value.slice(0,10);" id="user_mobile" required>
+                        <div>Event Booking Date</div>
+                        <input type="date" name="date" class="w-100" id="user_date" required>
                         <button class="btn mt-3" type="submit" name="submit">Submit</button>
                      </form>
                      
@@ -174,16 +178,29 @@
       </section>
 
 
-      <section class="pl-md-5 pr-md-5">
-         <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3886.8775451193574!2d80.2689597!3d13.0434657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52662ecb2ef00f%3A0x17faada497ccf432!2sClarion%20Hotel%20President!5e0!3m2!1sen!2sin!4v1649406332143!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section>
+         <div class="row m-0">
+            <div class="col-md-6 p-0">
+               <img src="img/map.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 p-0">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3886.8775451193574!2d80.2689597!3d13.0434657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52662ecb2ef00f%3A0x17faada497ccf432!2sClarion%20Hotel%20President!5e0!3m2!1sen!2sin!4v1649406332143!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 h-100"></iframe>
+            </div>
          </div>
       </section>
-
 
       <footer class="pt-3 pb-3">
          <div class="text-center text-white fo-16 fw-500">Copyright © 2014 Urban Tree</div>
       </footer>
+
+
+      <div class="modal fade" id="gallery_modal">
+         <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content p-0">
+               <img src="" id="gallery_modal_img">
+            </div>
+         </div>
+      </div>
 
       
       <!--Script files -->

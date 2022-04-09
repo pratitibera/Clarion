@@ -89,13 +89,8 @@ function submitForm() {
 
 $("#header_carousel .owl-item").click(function(){
     if($(this).hasClass("center") == true){
-        $(this).children().css('transform', 'scale(1.7)');
+        var image = $(this).children().children().attr('src');
+        document.getElementById('gallery_modal_img').setAttribute('src', image);
+        $("#gallery_modal").modal()
     }
-    else{
-        $("#header_carousel .owl-item").children().removeAttr('style');
-    }
-});
-
-$(".owl-nav > button").click(function(){
-    $("#header_carousel .owl-item").children().removeAttr('style');
 });
