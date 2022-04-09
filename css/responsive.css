@@ -78,6 +78,9 @@
 	.mow-100 {
 		width: 100%!important;
 	}
+	.mvh-60{
+		height: 60vh;
+	}
 	/* Custom classes */
 	.header_carousel{
 		margin: 30px 60px 0px 60px;

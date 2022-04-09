@@ -281,3 +281,17 @@ footer{
 .feature_list li{
 	margin: 20px 0px;
 }
+.close{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: #000!important;
+	padding: 8px 10px!important;
+	opacity: 1!important;
+}
+.close:hover{
+	color: #fff!important;
+}
