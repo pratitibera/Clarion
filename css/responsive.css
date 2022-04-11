@@ -101,4 +101,8 @@
 	.submitted_img{
 		width: 60%;
 	}
+	#gallery_modal_img{
+		width: 100%;
+		height: auto!important;
+	}
 }
